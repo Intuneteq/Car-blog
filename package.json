@@ -1,7 +1,6 @@
 {
   "name": "carblog",
   "version": "0.1.0",
-  "homepage": "https://intuneteq.github.io/Car-Blog",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -25,9 +24,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "auth": "node server.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "auth": "node server.js"
   },
   "eslintConfig": {
     "extends": [
