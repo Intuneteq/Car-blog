@@ -1,0 +1,17 @@
+.app__adminBlogList {
+    padding: 6rem 2rem 0;
+}
+
+.app__adminBlogList-item {
+    .link-button {
+        text-decoration: none;
+        color: var(--gray-color);
+        cursor: pointer;
+        margin-top: 1rem;
+        font-weight: bold;
+
+        &:hover {
+            color: var(--primary-color);
+        }
+    }
+}
