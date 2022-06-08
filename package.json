@@ -53,5 +53,5 @@
     "json-server": "^0.17.0",
     "jsonwebtoken": "^8.5.1"
   },
-  "proxy": "https://car-blog-api.herokuapp.com/"
+  "proxy": "https://car-blog-api.herokuapp.com"
 }
