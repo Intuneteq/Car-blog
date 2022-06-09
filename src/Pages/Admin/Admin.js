@@ -24,7 +24,7 @@ const Admin = () => {
     console.log("here", email, password);
     setIsLoading(true);
     axios
-      .post("/login", 
+      .post("https://car-blog-api.herokuapp.com/login", 
         {email, password}
       )
      

@@ -10,7 +10,7 @@ import "./BlogPages.scss";
 const BlogPages = () => {
   const { _id } = useParams();
   const navigate = useNavigate();
-  const { data: blog, isLoading, isError } = UseCustomHook(`/blogPage/${_id}`);
+  const { data: blog, isLoading, isError } = UseCustomHook(`https://car-blog-api.herokuapp.com/blogPage/${_id}`);
 
   const handleDelete = () => {
     fetch(`https://car-blog-api.herokuapp.com/blogPage/${_id}`, {
