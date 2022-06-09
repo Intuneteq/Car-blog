@@ -6,18 +6,19 @@ const UseCustomHook = (url) => {
   const [isError, setIsError] = useState(false);
 
   useEffect(() => {
+
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
         setIsLoading(false);
-        setData(data);
+        setData(data)
       })
       .catch((error) => {
         setIsLoading(false);
         setIsError(true);
       });
-  }, []);
+  }, [url]);
 
   return { data, isLoading, isError };
 };

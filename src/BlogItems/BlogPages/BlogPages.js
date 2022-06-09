@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { toast } from 'react-toastify';
+import { toast } from "react-toastify";
 
 import IsError from "../../Constant/IsError/IsError";
 import IsLoading from "../../Constant/IsLoading/IsLoading";
@@ -16,16 +16,16 @@ const BlogPages = () => {
     fetch(`/blogPage/${_id}`, {
       method: "DELETE",
     }).then(() => {
-      toast.success("Blog Deleted")
+      toast.success("Blog Deleted");
       navigate("/");
     });
   };
 
   return (
     <div className="app__blogpage">
-      {isLoading && <IsLoading />}
-      {isError && <IsError />}
-      {
+      {isLoading ? (
+        <IsLoading />
+      ) : (
         <div>
           <h1 className="head-text">{blog.title}</h1>
           <p className="in-text">{blog.body}</p>
@@ -34,7 +34,8 @@ const BlogPages = () => {
             <button onClick={handleDelete}>Delete Blog</button>
           </div>
         </div>
-      }
+      )}
+      {isError && <IsError />}
     </div>
   );
 };

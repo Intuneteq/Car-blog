@@ -65,7 +65,7 @@ const Admin = () => {
           onSubmit={loginHandler}
           className="app__admin-form"
         >
-          <div className="control">
+          <div>
             <label htmlFor="title">Username:</label>
             <input
               type="email"
@@ -76,7 +76,7 @@ const Admin = () => {
             />
           </div>
 
-          <div className="control">
+          <div>
             <label htmlFor="title">Password:</label>
             <input
               type="password"
