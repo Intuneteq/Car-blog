@@ -7,7 +7,7 @@ import AdminBlogList from "../AdminBlogList/AdminBlogList";
 const Adminblogpage = () => {
 
   const { data, isLoading, isError } = UseCustomHook(
-    "/blog"
+    "https://car-blog-api.herokuapp.com/blog"
   );
 
   return (

@@ -28,7 +28,7 @@ const UpdateBlog = () => {
 
     console.log("here", formData);
     setIsLoading(true);
-    fetch(`/blogPage/${_id}`, {
+    fetch(`https://car-blog-api.herokuapp.com/blogPage/${_id}`, {
       method: "PUT",
       headers: {
         Accept: "application/json",

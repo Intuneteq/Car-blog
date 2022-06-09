@@ -13,7 +13,7 @@ const BlogPages = () => {
   const { data: blog, isLoading, isError } = UseCustomHook(`/blogPage/${_id}`);
 
   const handleDelete = () => {
-    fetch(`/blogPage/${_id}`, {
+    fetch(`https://car-blog-api.herokuapp.com/blogPage/${_id}`, {
       method: "DELETE",
     }).then(() => {
       toast.success("Blog Deleted");

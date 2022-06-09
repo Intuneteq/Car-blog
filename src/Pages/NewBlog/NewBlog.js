@@ -27,7 +27,7 @@ const NewBlog = () => {
 
     console.log("here", formData);
     setIsLoading(true);
-    fetch("/newBlog", {
+    fetch("https://car-blog-api.herokuapp.com/newBlog", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
