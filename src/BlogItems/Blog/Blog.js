@@ -5,7 +5,7 @@ import UseCustomHook from "../../Constant/UseCustomHook";
 import "./Blog.scss";
 
 const Blog = () => {
-  const { data, isLoading, isError } = UseCustomHook("/blog");
+  const { data, isLoading, isError } = UseCustomHook("https://car-blog-api.herokuapp.com/blog");
 
   console.log("data", data);
 
